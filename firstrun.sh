@@ -10,7 +10,8 @@ if [ ! "$EDGE" = "1" ]; then
   echo "Bleeding edge not requested."
 else
   echo "Updating digiKam to latest"
+  add-apt-repository ppa:philip5/extra
   apt-get update
-  apt-get install -y digikam
+  apt-get install -y digikam5
   echo "digiKam updated to latest"
 fi
